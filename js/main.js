@@ -65,7 +65,8 @@ window.onload = function () {
     document.addEventListener("scroll", createPosition)
 
     function createPosition() {
-      const contentElement = document.querySelector(".links__container");
+      const contentElement = document.querySelector(".about__container");
+      // const contentElement = document.querySelector(".links__container");
       const windowHeight = window.innerHeight;
 
       const finalPosition = scrollY / (contentElement.offsetTop - windowHeight) * 60;
@@ -260,19 +261,4 @@ window.onload = function () {
       duration: 700,
     });
   }
-
-  window.addEventListener("scroll", function () { 
-    let scrollY = window.scrollY;
-    let mapOffset = this.document.querySelector(".contacts").offsetTop; // родитель
-    if (scrollY >= mapOffset - 700) { // если до родителя остается 400 пикселей то срабатывает этот код
-      document.querySelectorAll(".about-init-animation").forEach(function(e) { // элемент родителя
-        e.style.animationName = "animContactsItem";
-      })
-    } else {
-      document.querySelectorAll(".about-init-animation").forEach(function(e) { // элемент родителя
-        e.style.animationName = "none";
-      })
-    }
-  
-  })
 }

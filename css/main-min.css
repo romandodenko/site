@@ -1834,12 +1834,9 @@ main {
   background-repeat: no-repeat;
   background-size: 100%;
   padding-bottom: 76%;
-  /* -webkit-transform: translate(-200%, 0); */
-  /* -ms-transform: translate(-200%, 0); */
-  /* transform: translate(-200%, 0); */
-  -webkit-transform: translate(0, 0);
-  -ms-transform: translate(0, 0);
-  transform: translate(0, 0);
+  -webkit-transform: translate(-200%, 0);
+  -ms-transform: translate(-200%, 0);
+  transform: translate(-200%, 0);
   -webkit-transition: -webkit-transform .8s ease;
   transition: -webkit-transform .8s ease;
   -o-transition: transform .8s ease;
@@ -2001,13 +1998,7 @@ main {
 }
 
 .about {
-  padding: 60px 0
-}
-
-@media (max-width:600px) {
-  .about {
-    padding: 40px 0
-  }
+  padding-top: 150vh
 }
 
 .about__top:not(:last-child) {
@@ -2107,12 +2098,12 @@ main {
 }
 
 .contacts {
-  /* padding: 60px 0 */
+  padding: 60px 0
 }
 
 @media (max-width:600px) {
   .contacts {
-    /* padding: 40px 0 */
+    padding: 40px 0
   }
 }
 
@@ -2246,9 +2237,6 @@ main {
   -webkit-transition: color .2s ease;
   -o-transition: color .2s ease;
   transition: color .2s ease;
-  opacity: 0;
-  -webkit-transform: translateX(-200px);
-  transform: translateX(-200px);
   -webkit-animation-name: animContactsItem;
   animation-name: animContactsItem;
   -webkit-animation-timing-function: ease;
@@ -2256,7 +2244,7 @@ main {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards
 }
 
 @media (max-width:600px) {
@@ -2788,9 +2776,24 @@ main {
 }
 
 .footer {
-  padding: 20px 0
+  padding: 20px 0 200px 20px
 }
+@media (max-width: 1439px) {
 
+}
+@media (max-width: 1220px) {
+
+}
+@media (max-width: 991px) {
+  .footer {
+    padding: 20px 0 150px 20px
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    padding: 20px 0 100px 20px
+  }
+}
 .footer_display {
   display: none
 }
