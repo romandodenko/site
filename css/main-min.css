@@ -2246,6 +2246,9 @@ main {
   -webkit-transition: color .2s ease;
   -o-transition: color .2s ease;
   transition: color .2s ease;
+  opacity: 0;
+  -webkit-transform: translateX(-200px);
+  transform: translateX(-200px);
   -webkit-animation-name: animContactsItem;
   animation-name: animContactsItem;
   -webkit-animation-timing-function: ease;
@@ -2253,7 +2256,7 @@ main {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards
+  animation-fill-mode: forwards;
 }
 
 @media (max-width:600px) {
