@@ -2,22 +2,9 @@
 
 window.onload = function () {
 
-  const menu = document.querySelector(".header__menu");
-
+  
 document.addEventListener("click", function (e) {
   const elementTarget = e.target;
-  if (elementTarget.closest(".burger")) {
-    menu.classList.add("menu-active")
-    document.body.style.overflow = "hidden";
-  }
-  if (elementTarget.closest(".header__exit-menu")) {
-    menu.classList.remove("menu-active")
-    document.body.style.overflow = "";
-  }
-  if (elementTarget.closest(".nav__link")) {
-    menu.classList.remove("menu-active")
-    document.body.style.overflow = "";
-  }
   if (elementTarget.closest(".portfolio-swiper__button")) {
     document.querySelectorAll(".portfolio-swiper__descr").forEach(function (s) {
       s.classList.remove("portfolio-swiper-descr-active")
@@ -94,6 +81,21 @@ if (document.body.offsetWidth > 1220) {
   window.scrollTo(0, 1)
 } else {
   document.querySelector(".page").style.height = "auto";
+}
+
+const mouse = document.querySelector(".mouse");
+
+if(mouse) {
+  window.addEventListener("scroll", function () {
+    let pop = Math.floor(scrollY);
+    if (pop >= 150) {
+      mouse.style.opacity = 0;
+      mouse.style.visibility = "hidden";
+    } else {
+      mouse.style.opacity = 1;
+      mouse.style.visibility = "visible";
+    }
+  })
 }
 
     function testWebP(callback) {
