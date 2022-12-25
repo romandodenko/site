@@ -365,7 +365,7 @@ main {
 
 .mouse-item {
   width: 70px;
-  height: 120px;
+  height: 100px;
   border-radius: 50% 50% 10% 10%;
   border: 2px solid var(--black)
 }
