@@ -2,9 +2,9 @@
 
 window.onload = function () {
 
-  
-document.addEventListener("click", function (e) {
+  document.addEventListener("click", function (e) {
   const elementTarget = e.target;
+
   if (elementTarget.closest(".portfolio-swiper__button")) {
     document.querySelectorAll(".portfolio-swiper__descr").forEach(function (s) {
       s.classList.remove("portfolio-swiper-descr-active")
@@ -24,9 +24,79 @@ if (welcome) {
   function welcomeDisabled() {
     welcome.classList.add("welcome-disabled")
   }
-  setTimeout(welcomeDisabled, 3000)
+  setTimeout(welcomeDisabled, 2000)
 }
 
+const mainScreen = document.querySelector(".main-screen");
+const mainScreenTextInit = document.querySelector(".main-screen__text");
+const mainScreenText = document.querySelectorAll(".main-screen__text");
+const mainScreenMouse = document.querySelector(".main-screen-mouse")
+if (mainScreen) {
+
+  document.addEventListener("scroll", function () {
+    let mainScreenTextInit = Math.floor(scrollY);
+    if (mainScreenTextInit >= 50) {
+      mainScreenText.forEach(function (e) {
+        e.style.color = "#000000";
+      })
+      mainScreenMouse.style.cssText = `
+      opacity: 0;
+      visibility: hidden;
+    `;
+    } else {
+      mainScreenText.forEach(function (e) {
+        e.style.color = "#ffffff";
+      })
+      mainScreenMouse.style.cssText = `
+    opacity: 1;
+    visibility: visible;
+  `;
+    }
+  })
+
+  createPosition();
+
+  document.addEventListener("scroll", createPosition)
+
+  function createPosition() {
+    const contentElement = document.querySelector(".hello__container");
+    const windowHeight = window.innerHeight;
+
+    const finalPosition = scrollY / (contentElement.offsetTop - windowHeight) * 5;
+
+    finalPosition < 100 ? forestAnimation(finalPosition) : forestAnimation(100);
+  }
+
+  function forestAnimation(finalPosition) {
+    const bigImage = document.querySelector(".main-screen__big-image");
+    const textsBlocks = document.querySelectorAll(".main-screen__item");
+    const middleImage = document.querySelectorAll(".main-screen__middle-image");
+
+    const bigImageTranslate = 170 / 50 * finalPosition;
+
+    bigImage.style.cssText = `
+      transform:  translateY(-${bigImageTranslate}%);
+    `;
+
+    const textsBlocksTranslate = 190 / 50 * finalPosition;
+
+    textsBlocks[0].style.cssText = `
+    transform: translate(-${textsBlocksTranslate}%, ${textsBlocksTranslate}%);
+    `;
+    textsBlocks[1].style.cssText = `
+    transform: translate(${textsBlocksTranslate}%, ${textsBlocksTranslate}%);
+    `;
+
+    const middleImageTranslate = 190 / 50 * finalPosition;
+    const middleImageScale = 1 + 2 / 50 * finalPosition
+    middleImage[0].style.cssText = `
+    transform: translate(-${middleImageTranslate}%, ${middleImageTranslate}%);
+    `;
+    middleImage[1].style.cssText = `
+    transform: translate(${middleImageTranslate}%, ${middleImageTranslate}%);
+    `;
+  }
+}
 
 document.addEventListener("mouseover", function (e) {
   const elementTarget = e.target;
@@ -42,61 +112,6 @@ document.addEventListener("mouseover", function (e) {
     })
   }
 })
-
-if (document.body.offsetWidth > 1220) {
-  // 3D Scroll
-
-  let zSpacing = -1000,
-    lastPos = zSpacing / 5,
-    $frames = document.getElementsByClassName('frame'),
-    frames = Array.from($frames),
-    zVals = []
-
-
-  window.addEventListener("scroll", function (e) {
-    let top = document.documentElement.scrollTop,
-      delta = lastPos - top
-
-    lastPos = top
-
-    frames.forEach(function (n, i) {
-      zVals.push((i * zSpacing) + zSpacing)
-      zVals[i] += delta * -5.5
-      let frame = frames[i],
-        transform = `translateZ(${zVals[i]}px)`,
-        opacity = zVals[i] < Math.abs(zSpacing) / 1.8 ? 1 : 0,
-        visibilityProperty = zVals[i];
-      if (visibilityProperty < 1) {
-        var visibilityValue = "visibility: visible"
-      } else {
-        var visibilityValue = "visibility: hidden"
-      }
-
-      // здесь я сделал переменную visibilityProperty для того чтобы можно было функционировать с кнопками, ссылкам в слайдах
-
-      frame.setAttribute('style', `transform: ${transform}; opacity: ${opacity}; ${visibilityValue};`)
-    })
-  })
-
-  window.scrollTo(0, 1)
-} else {
-  document.querySelector(".page").style.height = "auto";
-}
-
-const mouse = document.querySelector(".mouse");
-
-if(mouse) {
-  window.addEventListener("scroll", function () {
-    let pop = Math.floor(scrollY);
-    if (pop >= 150) {
-      mouse.style.opacity = 0;
-      mouse.style.visibility = "hidden";
-    } else {
-      mouse.style.opacity = 1;
-      mouse.style.visibility = "visible";
-    }
-  })
-}
 
     function testWebP(callback) {
   var webP = new Image();
@@ -120,7 +135,11 @@ testWebP(function (support) {
 
 const portfolioSwiperInitTwo = document.querySelector(".portfolio-swiper-2");
 
+const portfolioSwiperInitThird = document.querySelector(".portfolio-swiper-3");
+
 if (portfolioSwiperInitOne) {
+  if (document.body.offsetWidth < 992) {
+    console.log("da")
     const portfolioSwiperOne = new Swiper('.portfolio-swiper-1', {
       observer: true,
       observeParents: true,
@@ -141,9 +160,12 @@ if (portfolioSwiperInitOne) {
         }
       },
     });
+  }
 }
 
 if (portfolioSwiperInitTwo) {
+  if (document.body.offsetWidth < 992) {
+    console.log("da")
     const portfolioSwiperTwo = new Swiper('.portfolio-swiper-2', {
       observer: true,
       observeParents: true,
@@ -164,25 +186,39 @@ if (portfolioSwiperInitTwo) {
         }
       },
     });
-  // }
+  }
 }
 
+if (portfolioSwiperInitThird) {
+  if (document.body.offsetWidth < 992) {
+    console.log("da")
+    const portfolioSwiperThird = new Swiper('.portfolio-swiper-3', {
+      observer: true,
+      observeParents: true,
+      watchOverflow: true,
+      direction: 'horizontal',
+      pagination: {
+        el: '.portfolio-swiper-pagination-3',
+        clickable: true,
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        701: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        }
+      },
+    });
+  }
+}
 
     const aosInit = document.querySelector(".aos-init");
-
-if (document.body.offsetWidth > 1220) {
-  if(aosInit) {
-    AOS.init({
-      duration: 700,
-      disable: true,
-    });
-  }
-} else {
-  if(aosInit) {
-    AOS.init({
-      duration: 700,
-      disable: false,
-    });
-  }
+if(aosInit) {
+  AOS.init({
+    duration: 700,
+  });
 }
 }
