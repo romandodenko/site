@@ -2893,6 +2893,9 @@ main:not(:last-child) {
 }
 
 @media (max-width:991px) {
+  .portfolio-swiper {
+    overflow: hidden;
+  }
   .portfolio-swiper:not(:last-child) {
     margin-bottom: 50px
   }
