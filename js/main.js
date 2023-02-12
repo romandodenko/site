@@ -254,7 +254,6 @@ window.onload = function () {
         observer: true,
         observeParents: true,
         watchOverflow: true,
-        speed: 1000,
         direction: 'horizontal',
         pagination: {
           el: '.portfolio-swiper-pagination-1',
@@ -280,7 +279,6 @@ window.onload = function () {
         observer: true,
         observeParents: true,
         watchOverflow: true,
-        speed: 1000,
         direction: 'horizontal',
         pagination: {
           el: '.portfolio-swiper-pagination-2',
