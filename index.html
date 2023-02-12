@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Роман Доденко. Frontend-разработчик. Личный сайт разработчика">
   <meta name="keywords"
     content="Frontend-разработчик, frontend-developer, frontend разработчик, frontend developer, html-верстальщик, html верстальщик, разработка сайта, вёрстка сайта, специалист по созданию сайтов, специалист по вёрстке, senior frontend-разработчик, senior frontend разработчик, senior frontend developer, senior frontend-developer, middle frontend-разработчик, middle frontend разработчик, middle frontend developer, middle frontend-developer">
@@ -17,558 +17,684 @@
   <link rel="preload" href="./fonts/Montserrat-Light.woff" as="font">
   <link rel="preload" href="./fonts/Montserrat-Light.woff2" as="font">
   <link rel="stylesheet" href="./resources/swiper/swiper.css">
-  <link rel="stylesheet" href="./resources/aos/aos.css">
   <link rel="stylesheet" href="./css/main-min.css">
-  <script defer="defer" src="./resources/swiper/swiper.js"></script>
-  <script defer="defer" src="./resources/aos/aos.js"></script>
-  <script defer="defer" src="./js/main.js"></script>
+  <script defer src="./resources/swiper/swiper.js"></script>
+  <script defer src="./resources/gsap/gsap.min.js"></script>
+  <script defer src="./resources/gsap/ScrollTrigger.min.js"></script>
+  <script defer src="./resources/gsap/ScrollSmoother.min.js"></script>
+  <script defer src="./js/main.js"></script>
   <title>Роман Доденко. Frontend-разработчик</title>
 </head>
 
 <body>
-  <div class="page aos-init">
-    <header class="header header_display"></header>
-    <main>
-      <section class="welcome">
-        <div class="welcome__container container"><strong class="welcome__strong"><span
-              class="welcome__strong-span welcome__strong-span_1">Д</span><span
-              class="welcome__strong-span welcome__strong-span_2">о</span><span
-              class="welcome__strong-span welcome__strong-span_3">б</span><span
-              class="welcome__strong-span welcome__strong-span_4">р</span><span
-              class="welcome__strong-span welcome__strong-span_5">о</span> <span
-              class="welcome__strong-span welcome__strong-span_6">п</span><span
-              class="welcome__strong-span welcome__strong-span_7">о</span><span
-              class="welcome__strong-span welcome__strong-span_8">ж</span><span
-              class="welcome__strong-span welcome__strong-span_9">а</span><span
-              class="welcome__strong-span welcome__strong-span_10">л</span><span
-              class="welcome__strong-span welcome__strong-span_11">о</span><span
-              class="welcome__strong-span welcome__strong-span_12">в</span><span
-              class="welcome__strong-span welcome__strong-span_13">а</span><span
-              class="welcome__strong-span welcome__strong-span_14">т</span><span
-              class="welcome__strong-span welcome__strong-span_15">ь</span><span
-              class="welcome__strong-span welcome__strong-span_16">!</span></strong>
-          <div class="welcome__preload">
-            <div class="welcome__image">
-              <picture>
-                <source srcset="./img/ryki.webp" type="image/webp"><img src="./img/ryki.png" loading="lazy" width="512"
-                  height="512" alt="Ручки"></picture>
-            </div>
-            <div class="welcome__circle welcome-circle">
-              <div class="welcome-circle__circle"></div>
-              <div class="welcome-circle__circle1"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="main-screen">
-        <div class="main-screen__mouse main-screen-mouse">
-          <div class="main-screen-mouse__item"><span class="main-screen-mouse__arrow"></span> <span
-              class="main-screen-mouse__circle"></span></div>
-        </div>
-        <div class="main-screen__item main-screen__item_1">
-          <h3 class="main-screen__text main-screen__text_1">Разработка и адаптация вашего сайта под разные разрешения
-            экранов устройств, кроссбраузерность и кроссплатформенность гарантирована.</h3>
-        </div>
-        <div class="main-screen__item main-screen__item_2">
-          <h3 class="main-screen__text main-screen__text_2">В разработке использую современные решения и технологии.
-            Создаю анимацию на CSS и JavaScript.</h3>
-        </div>
-        <div class="main-screen__middle-image main-screen__middle-image_1"><span></span></div>
-        <div class="main-screen__middle-image main-screen__middle-image_2"><span></span></div>
-        <div class="main-screen__big-image"><span></span></div>
-      </section>
-      <section class="hello">
-        <div class="hello__container container">
-          <div class="hello__content">
-            <div class="hello__body">
-              <h1 class="hello__title title-v1" data-aos="fade-up">Привет! Меня зовут Роман Доденко <span>И я
-                  Frontend-разработчик</span></h1>
-              <p class="hello__text text" data-aos="fade-up">
-                Общий стаж разработки сайтов - 1,7 года.
-                Умею верстать HTML письма, создавать анимацию на CSS и JS.
-                Мой стэк: HTML5, CSS3, для работы с CSS использую препроцессор SASS - диалект SCSS, JavaScript.
-                Применяю методологию БЭМ, для сборки проекта использую сборщик Gulp.</p>
-              <ul class="hello__list" aria-label="Список социальных сетей" data-aos="fade-up">
-                <li class="hello__item hello__item_1"><a class="hello__link" target="_blank"
-                    href="https://vk.com/doden4ik" aria-label="Ссылка на вконтакте"><svg width="24" height="24">
-                      <use xlink:href="./img/svg/sprites.svg#vk"></use>
-                    </svg></a></li>
-                <li class="hello__item hello__item_2"><a class="hello__link" target="_blank"
-                    href="https://t.me/romand95" aria-label="Ссылка на телеграм"><svg width="24" height="24">
-                      <use xlink:href="./img/svg/sprites.svg#telegram"></use>
-                    </svg></a></li>
-                <li class="hello__item hello__item_3"><a class="hello__link" target="_blank"
-                    href="https://github.com/romandodenko/" aria-label="Ссылка на гитхаб"><svg width="16" height="16">
-                      <use xlink:href="./img/svg/sprites.svg#github"></use>
-                    </svg></a></li>
-              </ul>
-            </div>
-            <div class="hello__image" data-aos="fade-left">
-              <picture>
-                <source srcset="./img/hello.webp" type="image/webp"><img src="./img/hello.png" loading="lazy"
-                  width="500" height="500" alt="Картинка"></picture>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="about">
-        <div class="about__container container">
-          <h2 class="about__title title-v1">Мои навыки и умения</h2>
-          <ul class="about__list" aria-label="Список моих навыков и умений">
-            <li class="about__item about__item_1" data-aos="fade-up">
-              <p class="about__text text-v2">HTML5</p>
-            </li>
-            <li class="about__item about__item_2" data-aos="fade-up">
-              <p class="about__text text-v2">CSS3</p>
-            </li>
-            <li class="about__item about__item_3" data-aos="fade-up">
-              <p class="about__text text-v2">JavaScript</p>
-            </li>
-            <li class="about__item about__item_1" data-aos="fade-up">
-              <p class="about__text text-v2">Семантическая вёрстка</p>
-            </li>
-            <li class="about__item about__item_1" data-aos="fade-up">
-              <p class="about__text text-v2">Адаптивная вёрстка</p>
-            </li>
-            <li class="about__item about__item_5" data-aos="fade-up">
-              <p class="about__text text-v2">Анимации на CSS и JavaScript</p>
-            </li>
-            <li class="about__item about__item_1" data-aos="fade-up">
-              <p class="about__text text-v2">Кроссбраузерная вёрстка</p>
-            </li>
-            <li class="about__item about__item_2" data-aos="fade-up">
-              <p class="about__text text-v2">Flexbox</p>
-            </li>
-            <li class="about__item about__item_2" data-aos="fade-up">
-              <p class="about__text text-v2">Grid</p>
-            </li>
-            <li class="about__item about__item_2" data-aos="fade-up">
-              <p class="about__text text-v2">SASS - диалект SCSS</p>
-            </li>
-            <li class="about__item about__item_1" data-aos="fade-up">
-              <p class="about__text text-v2">Валидная вёрстка</p>
-            </li>
-            <li class="about__item about__item_2" data-aos="fade-up">
-              <p class="about__text text-v2">Bootstrap</p>
-            </li>
-            <li class="about__item about__item_4" data-aos="fade-up">
-              <p class="about__text text-v2">Gulp</p>
-            </li>
-            <li class="about__item about__item_1" data-aos="fade-up">
-              <p class="about__text text-v2">Методология БЭМ</p>
-            </li>
-            <li class="about__item about__item_4" data-aos="fade-up">
-              <p class="about__text text-v2">Git</p>
-            </li>
-            <li class="about__item about__item_1" data-aos="fade-up">
-              <p class="about__text text-v2">Html письма</p>
-            </li>
-            <li class="about__item about__item_5" data-aos="fade-up">
-              <p class="about__text text-v2">Get , post запросы на fetch</p>
-            </li>
-            <li class="about__item about__item_5" data-aos="fade-up">
-              <p class="about__text text-v2">Менторство</p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="portfolio">
-        <div class="container">
-          <h2 class="portfolio__title title-v1" data-aos="fade-right">Портфолио</h2>
-          <ul class="portfolio__list portfolio-list" aria-label="Список портфолио">
-            <li class="portfolio-list__item">
-              <h3 class="portfolio-list__title title-v2" data-aos="fade-right">Коммерческие проекты</h3>
-              <div class="portfolio-list__wrapper-slider">
-                <div class="portfolio-list__swiper portfolio-swiper portfolio-swiper-1 swiper">
-                  <ul class="portfolio-swiper__wrapper swiper-wrapper" aria-label="Список сайтов в портфолио">
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank" href="./sites/commerce/medars/index.html"
-                          aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/medars.webp" type="image/webp"><img src="./img/medars.png"
-                              loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/commerce/medars/index.html" aria-label="Ссылка на проект">Медицинский портал
-                          Medars </a><button class="portfolio-swiper__button"
-                          aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Лендинг сайта медицинского портала Medars. Сайт был разработан
-                          с нуля. Был реализован слайдер, выпадающее меню, анимация, аккордеон, сложная вёрстка и
-                          адаптив.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank" href="./sites/commerce/medars/index.html"
-                        aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank"
-                          href="./sites/commerce/lavka-oligarha/index.html" aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/lavka-oligarha.webp" type="image/webp"><img
-                              src="./img/lavka-oligarha.png" loading="lazy" width="460" height="301"
-                              alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/commerce/lavka-oligarha/index.html" aria-label="Ссылка на проект">Сервис
-                          кредитования Лавка олигарха </a><button class="portfolio-swiper__button"
-                          aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Сайт состоит из 74 страниц. Сайт был разработан с нуля. На
-                          данном сайте сделал множество слайдеров, кастомные селекты, кастомные инпуты, кастомные радио
-                          кнопки. Аккордеон, табы. Подгрузку элементов при нажатии на кнопку. Была проделана большая
-                          работа с DOM деревом. При наведении на пользователя на главной странице появляется статистика
-                          пользователя. Добавление полей в конструкторе документов, появление элемента при заполнение
-                          инпута. Сложный адаптив.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank"
-                        href="./sites/commerce/lavka-oligarha/index.html" aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank"
-                          href="./sites/commerce/iskywenie/index.html" aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/iskywenie.webp" type="image/webp"><img src="./img/iskywenie.png"
-                              loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/commerce/iskywenie/index.html" aria-label="Ссылка на проект">Шоу Искушение
-                        </a><button class="portfolio-swiper__button" aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Лендинг сайта шоу Искушение. Сайт был разработан с нуля. На
-                          данном сайте реализовал дождь, через canvas. При наведение на главный блок, появляются
-                          фотографии. Классный ховер эффект капель при наведение на кнопку билеты.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank"
-                        href="./sites/commerce/iskywenie/index.html" aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank" href="./sites/commerce/akb/index.html"
-                          aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/akb.webp" type="image/webp"><img src="./img/akb.png" loading="lazy"
-                              width="460" height="301" alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/commerce/akb/index.html" aria-label="Ссылка на проект">Интернет магазин
-                          Zamena-AKB </a><button class="portfolio-swiper__button"
-                          aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Сайт состоит из 6 страниц. Сайт был разработан с нуля. На
-                          данном сайте сделал множество кастомных инпутов, селектов. Кастомный скролл. Фильтр в
-                          каталоге. Попапы. Grid сетку. Вставил яндекс карту, с ленивой загрузкой( условно если
-                          пользователь приближается к карте, до неё остается 500 пикселей, она загружается ), такой
-                          метод улучшает загрузка сайта. Сложный адаптив.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank" href="./sites/commerce/akb/index.html"
-                        aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image">
-                        <a target="_blank" href="./sites/commerce/septik-stroy/index.html" aria-label="Ссылка на проект">
-                        <picture><source srcset="./img/septik-stroy.webp"type="image/webp"><img src="./img/septik-stroy.png" loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
-                      </a>
-                      </div>
-                      <div class="portfolio-swiper__descr">
-                        <a class="portfolio-swiper__see" target="_blank" href="./sites/commerce/septik-stroy/index.html" aria-label="Ссылка на проект">
-                          Продажа и установка септиков на вашем участке Septik stroy
-                        </a>
-                        <button class="portfolio-swiper__button" aria-label="Информация о проекте">Информация о проекте</button>
-                        <p class="portfolio-swiper__text">
-                          Сайт состоит из 10 страниц. Сайт был разработан с нуля. На данном сайте сделал выпадающий список в меню. Множество слайдеров. Двойной слайдер. Яндекс карты. Грид сетки. Сделал отправку форм на сервер, через метод fetch.
-                        </p>
-                      </div>
-                      <a class="portfolio-swiper__link" target="_blank" href="./sites/commerce/septik-stroy/index.html" aria-label="Ссылка на проект">
-                        Смотреть
-                      </a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank" href="./sites/commerce/grevs/index.html"
-                          aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/grevs.webp" type="image/webp"><img src="./img/grevs.png"
-                              loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/commerce/grevs/index.html" aria-label="Ссылка на проект">Интернет магазин Grevs
-                        </a><button class="portfolio-swiper__button" aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Лендинг интернет магазина по продаже спортивной экипировки и
-                          снаряжения Grevs. Сайт был разработан с нуля. На данном сайте сделал кастомные инпуты,
-                          кастомный селект. Анимация.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank" href="./sites/commerce/grevs/index.html"
-                        aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank" href="./sites/commerce/ohta/index.html"
-                          aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/ohta.webp" type="image/webp"><img src="./img/ohta.png" loading="lazy"
-                              width="460" height="301" alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/commerce/ohta/index.html" aria-label="Ссылка на проект">Апарт отель Ohta SKI
-                          Resort </a><button class="portfolio-swiper__button"
-                          aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Сайт состоит из 9 страниц. Сайт был разработан с нуля. На
-                          данном сайте сделал множество слайдеров. Галерею. Кастомные инпуты. Табы. Попапы. Grid сетку
-                          Вставил яндекс карту, с ленивой загрузкой( условно если пользователь приближается к карте, до
-                          неё остается 500 пикселей, она загружается ), такой метод улучшает загрузка сайта.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank" href="./sites/commerce/ohta/index.html"
-                        aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank" href="./sites/commerce/quality/index.html"
-                          aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/quality.webp" type="image/webp"><img src="./img/quality.png"
-                              loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/commerce/quality/index.html" aria-label="Ссылка на проект">Сервис по ремонту
-                          техники Quality </a><button class="portfolio-swiper__button"
-                          aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Лендинг сервиса по ремонту техники Quality. Сайт был
-                          разработан с нуля. На данном сайте сделал параллакс эффект. Grid сетку. Табы. Попапы. Анимацию
-                          при скролле сайта. Вставил яндекс карту, с ленивой загрузкой( условно если пользователь
-                          приближается к карте, до неё остается 500 пикселей, она загружается ), такой метод улучшает
-                          загрузка сайта. Подключил и настроил форму для отправки письма на почту.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank" href="./sites/commerce/quality/index.html"
-                        aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank" href="./sites/commerce/lyasya/index.html"
-                          aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/lyasya.webp" type="image/webp"><img src="./img/lyasya.png"
-                              loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/commerce/lyasya/index.html" aria-label="Ссылка на проект">Интернет магазин Ляся
-                        </a><button class="portfolio-swiper__button" aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Лендинг интернет магазина Ляся. Сайт был разработан с нуля. На
-                          данном сайте сделал слайдер в главном блоке, слайдер в карточке товара, многорядный слайдер в
-                          каталоге. Табы.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank" href="./sites/commerce/lyasya/index.html"
-                        aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank"
-                          href="./sites/commerce/nfc-umicard/index.html" aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/umi-card-page.webp" type="image/webp"><img
-                              src="./img/umi-card-page.png" loading="lazy" width="460" height="301"
-                              alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/commerce/nfc-umicard/index.html" aria-label="Ссылка на проект">Страница Nfc
-                          Umicard </a><button class="portfolio-swiper__button"
-                          aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Страница Nfc Umicard для сайта веб студии ABI business.
-                          Страница была разработана с нуля. На данном сайте сделал интересный аккордеон. Сложный
-                          адаптив.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank"
-                        href="./sites/commerce/nfc-umicard/index.html" aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="portfolio__controls">
-                  <div class="portfolio-swiper-pagination portfolio-swiper-pagination-1 swiper-pagination"></div>
-                </div>
-              </div>
-            </li>
-            <li class="portfolio-list__item">
-              <h3 class="portfolio-list__title title-v2" data-aos="fade-right">Pet проекты</h3>
-              <div class="portfolio-list__wrapper-slider">
-                <div class="portfolio-list__swiper portfolio-swiper portfolio-swiper-2 swiper">
-                  <ul class="portfolio-swiper__wrapper swiper-wrapper" aria-label="Список сайтов в портфолио">
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank" href="./sites/pet/blanchard/index.html"
-                          aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/blanchard.webp" type="image/webp"><img src="./img/blanchard.png"
-                              loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/pet/blanchard/index.html" aria-label="Ссылка на проект">Художественная галерея
-                          Blanchard </a><button class="portfolio-swiper__button"
-                          aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Лендинг художественной галереи Blanchard. Сайт был разработан
-                          с нуля. На данном сайте сделал красивый слайдер на заднем фоне, с анимацией увеличения и
-                          уменьшения. Аккордеон, табы. Тултип. Кастомный селект, слайдер с попапами. Кастомные инпуты.
-                          Кастомный скролл. Вставил яндекс карту, с ленивой загрузкой( условно если пользователь
-                          приближается к карте, до неё остается 500 пикселей, она загружается ), такой метод улучшает
-                          загрузка сайта. Подключил и настроил форму для отправки письма на почту.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank" href="./sites/pet/blanchard/index.html"
-                        aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank" href="./sites/pet/funiro/index.html"
-                          aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/funiro.webp" type="image/webp"><img src="./img/funiro.png"
-                              loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/pet/funiro/index.html" aria-label="Ссылка на проект">Интернет магазин Funiro
-                        </a><button class="portfolio-swiper__button" aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Лендинг интернет магазина Funiro. Сайт был разработан с нуля.
-                          На данном сайте сделал множество необычных и красивых слайдеров. Красивый ховер эффект на
-                          карточки. Красивую галерею.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank" href="./sites/pet/funiro/index.html"
-                        aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank" href="./sites/pet/venarus/index.html"
-                          aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/venarus.webp" type="image/webp"><img src="./img/venarus.png"
-                              loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/pet/venarus/index.html" aria-label="Ссылка на проект">Сайт препарата Venarus
-                        </a><button class="portfolio-swiper__button" aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Лендинг препарата Venarus. Сайт был разработан с нуля. На
-                          данном сайте сделал слайдеры, бесконечную анимацию прокрутки блока, много анимаций.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank" href="./sites/pet/venarus/index.html"
-                        aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image">
-                        <a target="_blank" href="./sites/pet/interactive/index.html" aria-label="Ссылка на проект">
-                        <picture>
-                          <source srcset="./img/interactive.webp" type="image/webp">
-                          <img src="./img/interactive.png" loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
-                      </a>
-                      </div>
-                      <div class="portfolio-swiper__descr">
-                        <a class="portfolio-swiper__see" target="_blank" href="./sites/pet/interactive/index.html" aria-label="Ссылка на проект">
-                          Интерактивные элементы
-                        </a>
-                        <button class="portfolio-swiper__button" aria-label="Информация о проекте">Информация о проекте</button>
-                        <p class="portfolio-swiper__text">
-                          Сделан выпадающий список, таймер в слайдере, переключение слайдов - анимация fade, калькулятор, валидация формы, отправка данных на сервер с калькулятора(чтобы её посмотреть, нужно нажать на кнопку оставить заявку, открыть девтулс и в объекте будут данные).
-                        </p>
-                      </div>
-                      <a class="portfolio-swiper__link" target="_blank" href="./sites/pet/interactive/index.html" aria-label="Ссылка на проект">
-                        Смотреть
-                      </a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank" href="./sites/pet/sitdownpls/index.html"
-                          aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/sitdownpls.webp" type="image/webp"><img src="./img/sitdownpls.png"
-                              loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/pet/sitdownpls/index.html" aria-label="Ссылка на проект">Интернет магазин
-                          Sitdownpls </a><button class="portfolio-swiper__button"
-                          aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Сайт состоит из 4 страниц. Сайт был разработан с нуля. На
-                          данном сайте сделал множество слайдеров. Подключил и настроил форму для отправки письма на
-                          почту. Кастомные селекты. Кастомные инпуты. Кастомный range цены. Фильтр в каталоге. Grid
-                          сетку. Тултип.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank" href="./sites/pet/sitdownpls/index.html"
-                        aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank" href="./sites/pet/high-pass/index.html"
-                          aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/high-pass.webp" type="image/webp"><img src="./img/high-pass.png"
-                              loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/pet/high-pass/index.html" aria-label="Ссылка на проект">Фотостудия High-pass
-                        </a><button class="portfolio-swiper__button" aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Лендинг фотостудии High-pass. Сайт был разработан с нуля.
-                          Данный сайт сделан с помощью grid, добавил анимацию.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank" href="./sites/pet/high-pass/index.html"
-                        aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                    <li class="portfolio-swiper__slide swiper-slide" data-aos="fade-up">
-                      <div class="portfolio-swiper__image"><a target="_blank" href="./sites/pet/evklid/index.html"
-                          aria-label="Ссылка на проект">
-                          <picture>
-                            <source srcset="./img/evklid.webp" type="image/webp"><img src="./img/evklid.png"
-                              loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
-                        </a></div>
-                      <div class="portfolio-swiper__descr"><a class="portfolio-swiper__see" target="_blank"
-                          href="./sites/pet/evklid/index.html" aria-label="Ссылка на проект">Строительная компания
-                          Evklid </a><button class="portfolio-swiper__button"
-                          aria-label="Информация о проекте">Информация о
-                          проекте</button>
-                        <p class="portfolio-swiper__text">Лендинг строительной компании Evklid. Сайт был разработан с
-                          нуля. На данном сайте сделал слайдер, аккордеон, табы, валидацию формы.</p>
-                      </div><a class="portfolio-swiper__link" target="_blank" href="./sites/pet/evklid/index.html"
-                        aria-label="Ссылка на проект">Смотреть</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="portfolio__controls">
-                  <div class="portfolio-swiper-pagination portfolio-swiper-pagination-2 swiper-pagination"></div>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="contacts">
-        <div class="contacts__container container">
-          <div class="contacts__left" data-aos="fade-right">
-            <h2 class="contacts__title title-v1">Контакты</h2>
-            <ul class="contacts__list contacts-list" aria-label="Список контактов">
-              <li class="contacts-list__item">
-                <h3 class="contacts-list__subtitle title-v3">Телефон</h3><a class="contacts-list__link"
-                  href="tel:+79609179874" aria-label="Мой телефон">+7 960 917 98 74</a>
-              </li>
-              <li class="contacts-list__item">
-                <h3 class="contacts-list__subtitle title-v3">Почта</h3><a class="contacts-list__link"
-                  href="mailto:creed6695@mail.ru" aria-label="Моя почта">creed6695@mail.ru</a>
-              </li>
-              <li class="contacts-list__item">
-                <h3 class="contacts-list__subtitle title-v3">Социальные сети</h3>
-                <ul class="contacts-list__list contacts-sublist" aria-label="Список социальных сетей">
-                  <li class="contacts-sublist__item contacts-sublist__item_1"><a class="contacts-sublist__link"
-                      target="_blank" href="https://vk.com/doden4ik" aria-label="Ссылка на вконтакте"><svg width="24"
-                        height="24">
+  <div class="page">
+    <div class="scroll">
+      <header class="header header_display">
+      </header>
+      <main>
+        <section class="hello">
+          <div class="hello__container container">
+            <div class="hello__content">
+              <div class="hello__body" data-speed=".75">
+                <h1 class="hello__title title-v1">
+                  Привет! Меня зовут Роман Доденко
+                  <span>И я Frontend-разработчик</span>
+                </h1>
+                <p class="hello__text text">Разработкой сайтов занимаюсь 1.8 лет. Умею верстать html
+                  письма, а так же создавать анимацию на css и js. Мой стэк: HTML5, CSS3, для работы с css использую
+                  препроцессор SASS - диалект SCSS,
+                  JavaScript. Использую методологию БЭМ, а так же сборщик Gulp.</p>
+                <ul class="hello__list" aria-label="Список социальных сетей">
+                  <li class="hello__item hello__item_1">
+                    <a class="hello__link" target="_blank" href="https://vk.com/doden4ik"
+                      aria-label="Ссылка на вконтакте">
+                      <svg width="24" height="24">
                         <use xlink:href="./img/svg/sprites.svg#vk"></use>
-                      </svg></a></li>
-                  <li class="contacts-sublist__item contacts-sublist__item_2"><a class="contacts-sublist__link"
-                      target="_blank" href="https://t.me/romand95" aria-label="Ссылка на телеграм"><svg width="24"
-                        height="24">
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="hello__item hello__item_2">
+                    <a class="hello__link" target="_blank" href="https://t.me/romand95" aria-label="Ссылка на телеграм">
+                      <svg width="24" height="24">
                         <use xlink:href="./img/svg/sprites.svg#telegram"></use>
-                      </svg></a></li>
-                  <li class="contacts-sublist__item contacts-sublist__item_3"><a class="contacts-sublist__link"
-                      target="_blank" href="https://github.com/romandodenko/" aria-label="Ссылка на гитхаб"><svg
-                        width="16" height="16">
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="hello__item hello__item_3">
+                    <a class="hello__link" target="_blank" href="https://github.com/romandodenko/"
+                      aria-label="Ссылка на гитхаб">
+                      <svg width="16" height="16">
                         <use xlink:href="./img/svg/sprites.svg#github"></use>
-                      </svg></a></li>
+                      </svg>
+                    </a>
+                  </li>
                 </ul>
+              </div>
+              <div class="hello__image" data-speed=".6">
+                <picture>
+                  <source srcset="./img/hello.webp" type="image/webp"><img src="./img/hello.png" loading="lazy"
+                    width="500" height="500" alt="Картинка"></picture>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="about">
+          <div class="about__container container">
+            <h2 class="about__title title-v1">
+              Мои навыки и умения
+            </h2>
+            <ul class="about__list" aria-label="Список моих навыков и умений">
+              <li class="about__item about__item_1">
+                <p class="about__text text-v2">
+                  HTML5
+                </p>
+              </li>
+              <li class="about__item about__item_2">
+                <p class="about__text text-v2">
+                  CSS3
+                </p>
+              </li>
+              <li class="about__item about__item_3">
+                <p class="about__text text-v2">
+                  JavaScript
+                </p>
+              </li>
+              <li class="about__item about__item_1">
+                <p class="about__text text-v2">
+                  Семантическая вёрстка
+                </p>
+              </li>
+              <li class="about__item about__item_1">
+                <p class="about__text text-v2">
+                  Адаптивная вёрстка
+                </p>
+              </li>
+              <li class="about__item about__item_5">
+                <p class="about__text text-v2">
+                  Анимации на CSS и JavaScript
+                </p>
+              </li>
+              <li class="about__item about__item_1">
+                <p class="about__text text-v2">
+                  Кроссбраузерная вёрстка
+                </p>
+              </li>
+              <li class="about__item about__item_2">
+                <p class="about__text text-v2">
+                  Flexbox
+                </p>
+              </li>
+              <li class="about__item about__item_2">
+                <p class="about__text text-v2">
+                  Grid
+                </p>
+              </li>
+              <li class="about__item about__item_2">
+                <p class="about__text text-v2">
+                  SASS - диалект SCSS
+                </p>
+              </li>
+              <li class="about__item about__item_1">
+                <p class="about__text text-v2">
+                  Валидная вёрстка
+                </p>
+              </li>
+
+              <li class="about__item about__item_2">
+                <p class="about__text text-v2">
+                  Bootstrap
+                </p>
+              </li>
+              <li class="about__item about__item_4">
+                <p class="about__text text-v2">
+                  Gulp
+                </p>
+              </li>
+              <li class="about__item about__item_1">
+                <p class="about__text text-v2">
+                  Методология БЭМ
+                </p>
+              </li>
+              <li class="about__item about__item_4">
+                <p class="about__text text-v2">
+                  Git
+                </p>
+              </li>
+              <li class="about__item about__item_1">
+                <p class="about__text text-v2">
+                  Html письма
+                </p>
+              </li>
+
+              <li class="about__item about__item_3">
+                <p class="about__text text-v2">
+                  Get , post запросы на fetch
+                </p>
+              </li>
+              <li class="about__item about__item_4">
+                <p class="about__text text-v2">
+                  Менторство
+                </p>
               </li>
             </ul>
           </div>
-          <div class="contacts__image" data-aos="fade-up"><img src="./img/contacts.svg" loading="lazy" width="826"
-              height="826" alt="Картинка"></div>
+        </section>
+        <section class="portfolio">
+          <div class="container">
+            <h2 class="portfolio__title title-v1">
+              Портфолио
+            </h2>
+            <ul class="portfolio__list portfolio-list" aria-label="Список портфолио">
+              <li class="portfolio-list__item">
+                <h3 class="portfolio-list__title title-v2">
+                  Коммерческие проекты
+                </h3>
+                <div class="portfolio-list__wrapper-slider">
+                  <div class="portfolio-list__swiper portfolio-swiper portfolio-swiper-1 swiper">
+                    <ul class="portfolio-swiper__wrapper swiper-wrapper" aria-label="Список сайтов в портфолио">
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/commerce/medars/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/medars.webp" type="image/webp"><img src="./img/medars.png"
+                                loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/commerce/medars/index.html" aria-label="Ссылка на проект">
+                            Медицинский портал Medars
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Лендинг сайта медицинского портала Medars. Сайт был разработан с нуля. Был реализован
+                            слайдер, выпадающее меню, анимация,
+                            аккордеон, сложная вёрстка и адаптив.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank" href="./sites/commerce/medars/index.html"
+                            aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/commerce/lavka-oligarha/index.html"
+                            aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/lavka-oligarha.webp" type="image/webp"><img
+                                src="./img/lavka-oligarha.png" loading="lazy" width="460" height="301"
+                                alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/commerce/lavka-oligarha/index.html" aria-label="Ссылка на проект">
+                            Сервис кредитования Лавка олигарха
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Сайт состоит из 74 страниц. Сайт был разработан с нуля. На данном сайте сделал множество
+                            слайдеров, кастомные селекты, кастомные инпуты, кастомные радио кнопки. Аккордеон, табы.
+                            Подгрузку элементов при нажатии на кнопку. Была проделана большая работа с DOM деревом.
+                            При наведении на пользователя на главной странице появляется статистика пользователя.
+                            Добавление полей в конструкторе документов, появление элемента при заполнение инпута.
+                            Сложный адаптив.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank"
+                            href="./sites/commerce/lavka-oligarha/index.html" aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/commerce/iskywenie/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/iskywenie.webp" type="image/webp"><img src="./img/iskywenie.png"
+                                loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/commerce/iskywenie/index.html" aria-label="Ссылка на проект">
+                            Шоу Искушение
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Лендинг сайта шоу Искушение. Сайт был разработан с нуля. На данном сайте реализовал дождь,
+                            через canvas. При наведение на главный блок, появляются фотографии. Классный ховер эффект
+                            капель при наведение на кнопку билеты.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank" href="./sites/commerce/iskywenie/index.html"
+                            aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/commerce/akb/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/akb.webp" type="image/webp"><img src="./img/akb.png" loading="lazy"
+                                width="460" height="301" alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/commerce/akb/index.html" aria-label="Ссылка на проект">
+                            Интернет магазин Zamena-AKB
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Сайт состоит из 6 страниц. Сайт был разработан с нуля. На данном сайте сделал множество
+                            кастомных инпутов, селектов. Кастомный скролл. Фильтр в каталоге. Попапы. Grid сетку.
+                            Вставил яндекс карту, с ленивой загрузкой( условно если пользователь приближается к карте,
+                            до неё остается 500 пикселей, она загружается ), такой метод улучшает загрузка сайта.
+                            Сложный адаптив.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank" href="./sites/commerce/akb/index.html"
+                            aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/commerce/septik-stroy/index.html"
+                            aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/septik-stroy.webp" type="image/webp"><img
+                                src="./img/septik-stroy.png" loading="lazy" width="460" height="301"
+                                alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/commerce/septik-stroy/index.html" aria-label="Ссылка на проект">
+                            Продажа и установка септиков на вашем участке Septik stroy
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Сайт состоит из 10 страниц. Сайт был разработан с нуля. На данном сайте сделал выпадающий
+                            список в меню. Множество слайдеров. Двойной слайдер. Яндекс карты. Грид сетки. Сделал
+                            отправку форм на сервер, через метод fetch.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank"
+                            href="./sites/commerce/septik-stroy/index.html" aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/commerce/grevs/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/grevs.webp" type="image/webp"><img src="./img/grevs.png"
+                                loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/commerce/grevs/index.html" aria-label="Ссылка на проект">
+                            Интернет магазин Grevs
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Лендинг интернет магазина по продаже спортивной экипировки и снаряжения Grevs. Сайт был
+                            разработан с нуля. На данном сайте сделал кастомные инпуты, кастомный селект. Анимация.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank" href="./sites/commerce/grevs/index.html"
+                            aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/commerce/ohta/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/ohta.webp" type="image/webp"><img src="./img/ohta.png"
+                                loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/commerce/ohta/index.html"
+                            aria-label="Ссылка на проект">
+                            Апарт отель Ohta SKI Resort
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Сайт состоит из 9 страниц. Сайт был разработан с нуля. На данном сайте сделал множество
+                            слайдеров. Галерею. Кастомные инпуты. Табы. Попапы. Grid сетку Вставил яндекс карту, с
+                            ленивой загрузкой( условно если пользователь приближается к карте, до неё остается 500
+                            пикселей, она загружается ), такой метод улучшает загрузка сайта.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank" href="./sites/commerce/ohta/index.html"
+                            aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/commerce/quality/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/quality.webp" type="image/webp"><img src="./img/quality.png"
+                                loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/commerce/quality/index.html" aria-label="Ссылка на проект">
+                            Сервис по ремонту техники Quality
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Лендинг сервиса по ремонту техники Quality. Сайт был разработан с нуля. На данном сайте
+                            сделал параллакс эффект. Grid сетку. Табы. Попапы. Анимацию при скролле сайта. Вставил
+                            яндекс карту, с ленивой загрузкой( условно если пользователь приближается к карте, до неё
+                            остается 500 пикселей, она загружается ), такой метод улучшает загрузка сайта. Подключил и
+                            настроил форму для отправки письма на почту.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank" href="./sites/commerce/quality/index.html"
+                            aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/commerce/lyasya/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/lyasya.webp" type="image/webp"><img src="./img/lyasya.png"
+                                loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/commerce/lyasya/index.html"
+                            aria-label="Ссылка на проект">
+                            Интернет магазин Ляся
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Лендинг интернет магазина Ляся. Сайт был разработан с нуля. На данном сайте сделал слайдер в
+                            главном блоке, слайдер в карточке товара, многорядный слайдер в каталоге. Табы.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank" href="./sites/commerce/lyasya/index.html"
+                            aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/commerce/nfc-umicard/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/umi-card-page.webp" type="image/webp"><img
+                                src="./img/umi-card-page.png" loading="lazy" width="460" height="301"
+                                alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank"
+                            href="./sites/commerce/nfc-umicard/index.html" aria-label="Ссылка на проект">
+                            Страница Nfc Umicard
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Страница Nfc Umicard для сайта веб студии ABI business. Страница была разработана с нуля. На
+                            данном сайте сделал интересный аккордеон. Сложный адаптив.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank"
+                            href="./sites/commerce/nfc-umicard/index.html" aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="portfolio__controls">
+                    <div class="portfolio-swiper-pagination portfolio-swiper-pagination-1 swiper-pagination"></div>
+                  </div>
+                </div>
+              </li>
+              <li class="portfolio-list__item">
+                <h3 class="portfolio-list__title title-v2">
+                  Pet проекты
+                </h3>
+                <div class="portfolio-list__wrapper-slider">
+                  <div class="portfolio-list__swiper portfolio-swiper portfolio-swiper-2 swiper">
+                    <ul class="portfolio-swiper__wrapper swiper-wrapper" aria-label="Список сайтов в портфолио">
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/pet/blanchard/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/blanchard.webp" type="image/webp"><img src="./img/blanchard.png"
+                                loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/pet/blanchard/index.html" aria-label="Ссылка на проект">
+                            Художественная галерея Blanchard
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Лендинг художественной галереи Blanchard. Сайт был разработан с нуля. На данном сайте сделал
+                            красивый слайдер на заднем фоне, с анимацией увеличения и уменьшения. Аккордеон, табы.
+                            Тултип. Кастомный селект, слайдер с попапами. Кастомные инпуты. Кастомный скролл. Вставил
+                            яндекс карту, с ленивой загрузкой( условно если пользователь приближается к карте, до неё
+                            остается 500 пикселей, она загружается ), такой метод улучшает загрузка сайта. Подключил и
+                            настроил форму для отправки письма на почту.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank" href="./sites/pet/blanchard/index.html"
+                            aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/pet/funiro/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/funiro.webp" type="image/webp"><img src="./img/funiro.png"
+                                loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/pet/funiro/index.html" aria-label="Ссылка на проект">
+                            Интернет магазин Funiro
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Лендинг интернет магазина Funiro. Сайт был разработан с нуля. На данном сайте сделал
+                            множество необычных и красивых слайдеров. Красивый ховер эффект на карточки. Красивую
+                            галерею.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank" href="./sites/pet/funiro/index.html"
+                            aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/pet/venarus/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/venarus.webp" type="image/webp"><img src="./img/venarus.png"
+                                loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/pet/venarus/index.html" aria-label="Ссылка на проект">
+                            Сайт препарата Venarus
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Лендинг препарата Venarus. Сайт был разработан с нуля. На данном сайте сделал слайдеры,
+                            бесконечную анимацию прокрутки блока, много анимаций.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank" href="./sites/pet/venarus/index.html"
+                            aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/pet/interactive/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/interactive.webp" type="image/webp"><img src="./img/interactive.png"
+                                loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/pet/interactive/index.html" aria-label="Ссылка на проект">
+                            Интерактивные элементы
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Сделан выпадающий список, таймер в слайдере, переключение слайдов - анимация fade,
+                            калькулятор, валидация формы, отправка данных на сервер с калькулятора(чтобы её посмотреть,
+                            нужно нажать на кнопку оставить заявку, открыть девтулс и в объекте будут данные).
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank" href="./sites/pet/interactive/index.html"
+                            aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/pet/sitdownpls/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/sitdownpls.webp" type="image/webp"><img src="./img/sitdownpls.png"
+                                loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/pet/sitdownpls/index.html" aria-label="Ссылка на проект">
+                            Интернет магазин Sitdownpls
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Сайт состоит из 4 страниц. Сайт был разработан с нуля. На данном сайте сделал множество
+                            слайдеров. Подключил и настроил форму для отправки письма на почту. Кастомные селекты.
+                            Кастомные инпуты. Кастомный range цены. Фильтр в каталоге. Grid сетку. Тултип.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank" href="./sites/pet/sitdownpls/index.html"
+                            aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/pet/high-pass/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/high-pass.webp" type="image/webp"><img src="./img/high-pass.png"
+                                loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/pet/high-pass/index.html" aria-label="Ссылка на проект">
+                            Фотостудия High-pass
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Лендинг фотостудии High-pass. Сайт был разработан с нуля. Данный сайт сделан с помощью grid,
+                            добавил анимацию.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank" href="./sites/pet/high-pass/index.html"
+                            aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                      <li class="portfolio-swiper__slide swiper-slide">
+                        <div class="portfolio-swiper__image">
+                          <a target="_blank" href="./sites/pet/evklid/index.html" aria-label="Ссылка на проект">
+                            <picture>
+                              <source srcset="./img/evklid.webp" type="image/webp"><img src="./img/evklid.png"
+                                loading="lazy" width="460" height="301" alt="Картинка проекта"></picture>
+                          </a>
+                        </div>
+                        <div class="portfolio-swiper__descr">
+                          <a class="portfolio-swiper__see" target="_blank" href="./sites/pet/evklid/index.html" aria-label="Ссылка на проект">
+                            Строительная компания Evklid
+                          </a>
+                          <p class="portfolio-swiper__text">
+                            Лендинг строительной компании Evklid. Сайт был разработан с нуля. На данном сайте сделал
+                            слайдер, аккордеон, табы, валидацию формы.
+                          </p>
+                          <a class="portfolio-swiper__link" target="_blank" href="./sites/pet/evklid/index.html"
+                            aria-label="Ссылка на проект">
+                            Смотреть
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="portfolio__controls">
+                    <div class="portfolio-swiper-pagination portfolio-swiper-pagination-2 swiper-pagination"></div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__container container">
+            <div class="contacts__left">
+              <h2 class="contacts__title title-v1">
+                Контакты
+              </h2>
+              <ul class="contacts__list contacts-list" aria-label="Список контактов">
+                <li class="contacts-list__item">
+                  <h3 class="contacts-list__subtitle title-v3">
+                    Телефон
+                  </h3>
+                  <a class="contacts-list__link" href="tel:+79609179874" aria-label="Мой телефон">
+                    +7 960 917 98 74
+                  </a>
+                </li>
+                <li class="contacts-list__item">
+                  <h3 class="contacts-list__subtitle title-v3">
+                    Почта
+                  </h3>
+                  <a class="contacts-list__link" href="mailto:creed6695@mail.ru" aria-label="Моя почта">
+                    creed6695@mail.ru
+                  </a>
+                </li>
+                <li class="contacts-list__item">
+                  <h3 class="contacts-list__subtitle title-v3">
+                    Социальные сети
+                  </h3>
+                  <ul class="contacts-list__list contacts-sublist" aria-label="Список социальных сетей">
+                    <li class="contacts-sublist__item contacts-sublist__item_1">
+                      <a class="contacts-sublist__link" target="_blank" href="https://vk.com/doden4ik"
+                        aria-label="Ссылка на вконтакте">
+                        <svg width="24" height="24">
+                          <use xlink:href="./img/svg/sprites.svg#vk"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="contacts-sublist__item contacts-sublist__item_2">
+                      <a class="contacts-sublist__link" target="_blank" href="https://t.me/romand95"
+                        aria-label="Ссылка на телеграм">
+                        <svg width="24" height="24">
+                          <use xlink:href="./img/svg/sprites.svg#telegram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="contacts-sublist__item contacts-sublist__item_3">
+                      <a class="contacts-sublist__link" target="_blank" href="https://github.com/romandodenko/"
+                        aria-label="Ссылка на гитхаб">
+                        <svg width="16" height="16">
+                          <use xlink:href="./img/svg/sprites.svg#github"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__image">
+              <img src="./img/contacts.svg" loading="lazy" width="826" height="826" alt="Картинка">
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__item">
+            <p class="footer__text"> <q>Продакшен пал, милорд</q> (с)</p>
+            <span class="footer__icon">
+              <picture>
+                <source srcset="./img/footer.webp" type="image/webp"><img src="./img/footer.png" loading="lazy"
+                  width="100" height="100" alt="Картинка"></picture>
+            </span>
+          </div>
         </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__item">
-          <p class="footer__text"><q>Продакшен пал, милорд</q> (с)</p><span class="footer__icon">
-            <picture>
-              <source srcset="./img/footer.webp" type="image/webp"><img src="./img/footer.png" loading="lazy"
-                width="100" height="100" alt="Картинка"></picture>
-          </span>
-        </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </div>
 </body>
 
