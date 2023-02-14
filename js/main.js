@@ -26,21 +26,21 @@ window.onload = function () {
     })
 
     gsap.fromTo('.about', {
-      opacity: .1,
+      opacity: 0,
       x: -100,
     }, {
       opacity: 1,
       x: 0,
       scrollTrigger: {
         trigger: '.about',
-        start: '-450',
-        end: '-200',
+        start: '-650',
+        end: '-300',
         scrub: true,
       }
     })
 
     gsap.fromTo('.portfolio', {
-      opacity: .1,
+      opacity: 0,
       x: 100,
     }, {
       opacity: 1,
@@ -54,7 +54,7 @@ window.onload = function () {
     })
 
     gsap.fromTo('.contacts', {
-      opacity: .1,
+      opacity: 0,
     }, {
       opacity: 1,
       scrollTrigger: {
@@ -93,7 +93,7 @@ window.onload = function () {
 
     itemsT.forEach(item => {
       gsap.fromTo(item, {
-        opacity: .1
+        opacity: .01
       }, {
         opacity: 1,
         y: 0,
@@ -128,7 +128,7 @@ window.onload = function () {
 
     itemsL.forEach(item => {
       gsap.fromTo(item, {
-        opacity: 0.1,
+        opacity: 0.01,
         x: -30
       }, {
         opacity: 1,
@@ -146,7 +146,7 @@ window.onload = function () {
 
     itemsR.forEach(item => {
       gsap.fromTo(item, {
-        opacity: 0.1,
+        opacity: 0.01,
         x: 30
       }, {
         opacity: 1,
