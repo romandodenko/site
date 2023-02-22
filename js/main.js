@@ -10,117 +10,100 @@ window.onload = function () {
       wrapper: '.page',
       content: '.scroll',
       smooth: 1.5,
-      effects: true
+      effects: true,
     })
 
     gsap.fromTo('.hello', {
       opacity: 1
     }, {
-      opacity: 0,
       scrollTrigger: {
         trigger: '.hello',
-        start: 'center',
+        start: 'center center',
         end: '620',
-        scrub: true
-      }
+        scrub: 1.3
+      },
+      opacity: 0
+    })
+
+    gsap.fromTo('.hello__body', {}, {
+      scrollTrigger: {
+        trigger: '.hello',
+        start: 'top top',
+        scrub: 1.9,
+      },
+      xPercent: -30
+    })
+
+    gsap.fromTo('.hello__image img', {}, {
+      scrollTrigger: {
+        trigger: '.hello',
+        start: 'top top',
+        scrub: 1.9,
+      },
+      scale: 1.2
     })
 
     gsap.fromTo('.about', {
       opacity: 0,
-      x: -100,
+      xPercent: -10,
     }, {
+      scrollTrigger: {
+        trigger: '.hello',
+        start: 'bottom bottom',
+        scrub: 1.5,
+      },
       opacity: 1,
-      x: 0,
-      scrollTrigger: {
-        trigger: '.about',
-        start: '-650',
-        end: '-300',
-        scrub: true,
-      }
-    })
-
-    gsap.fromTo('.portfolio', {
-      opacity: 0,
-      x: 100,
-    }, {
-      opacity: 1,
-      x: 0,
-      scrollTrigger: {
-        trigger: '.portfolio',
-        start: '-600',
-        end: '-180',
-        scrub: true
-      }
-    })
-
-    gsap.fromTo('.contacts', {
-      opacity: 0,
-    }, {
-      opacity: 1,
-      scrollTrigger: {
-        trigger: '.contacts',
-        start: '-600',
-        end: '-180',
-        scrub: true
-      }
-    })
-
-    gsap.fromTo('.contacts__list', {
-      y: 50,
-    }, {
-      y: 0,
-      scrollTrigger: {
-        trigger: '.contacts',
-        start: '-600',
-        end: '-180',
-        scrub: true
-      }
-    })
-
-    gsap.fromTo('.contacts__image', {
-      y: -50,
-    }, {
-      y: 0,
-      scrollTrigger: {
-        trigger: '.contacts',
-        start: '-600',
-        end: '-180',
-        scrub: true
-      }
-    })
-
-    let itemsT = gsap.utils.toArray('.portfolio-list__title')
-
-    itemsT.forEach(item => {
-      gsap.fromTo(item, {
-        opacity: .01
-      }, {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: item,
-          start: '-820',
-          end: '-320',
-          scrub: true
-        }
-      })
+      xPercent: 0,
     })
 
     let itemsA = gsap.utils.toArray('.about__item')
 
     itemsA.forEach(item => {
       gsap.fromTo(item, {
-        opacity: 0.1,
-        y: 20
+        opacity: 0,
+        scale: .3,
+        borderRadius: 0,
       }, {
-        opacity: 1,
-        y: 0,
         scrollTrigger: {
           trigger: item,
           start: '-650',
-          end: '-550',
-          scrub: true
-        }
+          end: 'center center',
+          scrub: 1.9
+        },
+        opacity: 1,
+        scale: 1,
+        borderRadius: 30,
+      })
+    })
+
+    gsap.fromTo('.portfolio', {
+      opacity: 0,
+      x: 100,
+    }, {
+      scrollTrigger: {
+        trigger: '.about',
+        start: 'bottom bottom',
+        scrub: 1.9
+      },
+      opacity: 1,
+      x: 0
+    })
+
+    let itemsT = gsap.utils.toArray('.portfolio-list__title')
+
+    itemsT.forEach(item => {
+      gsap.fromTo(item, {
+        opacity: .01,
+        yPercent: -100,
+      }, {
+        scrollTrigger: {
+          trigger: item,
+          start: '-620',
+          end: '-320',
+          scrub: 1.9
+        },
+        opacity: 1,
+        yPercent: 0,
       })
     })
 
@@ -129,16 +112,16 @@ window.onload = function () {
     itemsL.forEach(item => {
       gsap.fromTo(item, {
         opacity: 0.01,
-        x: -30
+        xPercent: -5,
       }, {
-        opacity: 1,
-        x: 0,
         scrollTrigger: {
           trigger: item,
-          start: '-550',
-          end: '-380',
-          scrub: true
-        }
+          start: 'top center',
+          end: 'center center',
+          scrub: 2.9
+        },
+        opacity: 1,
+        xPercent: 0,
       })
     })
 
@@ -147,17 +130,50 @@ window.onload = function () {
     itemsR.forEach(item => {
       gsap.fromTo(item, {
         opacity: 0.01,
-        x: 30
+        xPercent: 5,
       }, {
-        opacity: 1,
-        x: 0,
         scrollTrigger: {
           trigger: item,
-          start: '-550',
-          end: '-380',
-          scrub: true
-        }
+          start: 'top center',
+          end: 'center center',
+          scrub: 2.9
+        },
+        opacity: 1,
+        xPercent: 0,
       })
+    })
+
+    gsap.fromTo('.contacts', {
+      opacity: 0,
+    }, {
+      scrollTrigger: {
+        trigger: '.portfolio',
+        start: 'bottom bottom',
+        scrub: 1.9
+      },
+      opacity: 1,
+    })
+
+    gsap.fromTo('.contacts__list', {
+      yPercent: 20,
+    }, {
+      scrollTrigger: {
+        trigger: '.portfolio',
+        start: 'bottom bottom',
+        scrub: 1.9
+      },
+      yPercent: 0,
+    })
+
+    gsap.fromTo('.contacts__image', {
+      yPercent: -20,
+    }, {
+      scrollTrigger: {
+        trigger: '.portfolio',
+        start: 'bottom bottom',
+        scrub: 1.9
+      },
+      yPercent: 0,
     })
 
   }
@@ -167,20 +183,20 @@ window.onload = function () {
   anim
     .fromTo(".hello__title", {
       opacity: 0,
-      y: 50,
+      yPercent: 50,
     }, {
       opacity: 1,
-      y: 0,
+      yPercent: 0,
       duration: .6,
     })
 
   anim
     .fromTo(".hello__text", {
         opacity: 0,
-        y: 50,
+        yPercent: 50,
       }, {
         opacity: 1,
-        y: 0,
+        yPercent: 0,
         duration: .6,
       },
       "-=.3"
@@ -190,8 +206,8 @@ window.onload = function () {
     .fromTo(".hello__item_1", {
         opacity: 0,
       }, {
-        duration: .6,
         opacity: 1,
+        duration: .6,
       },
       "-=.4"
     )
@@ -199,8 +215,8 @@ window.onload = function () {
     .fromTo(".hello__item_2", {
         opacity: 0,
       }, {
-        duration: .6,
         opacity: 1,
+        duration: .6,
       },
       "-=.4"
     )
@@ -208,8 +224,8 @@ window.onload = function () {
     .fromTo(".hello__item_3", {
         opacity: 0,
       }, {
-        duration: .6,
         opacity: 1,
+        duration: .6,
       },
       "-=.4"
     )
@@ -217,13 +233,13 @@ window.onload = function () {
   anim
     .fromTo(".hello__image", {
         opacity: 0,
-        x: 50,
+        xPercent: 50,
       }, {
-        duration: .6,
         opacity: 1,
-        x: 0,
+        xPercent: 0,
+        duration: .8,
       },
-      "-=1.2"
+      "-=1.3"
     )
 
   function testWebP(callback) {

@@ -108,7 +108,7 @@ picture {
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local("Montserrat-Bold"), url(../fonts/Montserrat-Bold.woff2) format("woff2"), url(../fonts/Montserrat-Bold.woff) format("woff")
+  src: local("Montserrat-Bold"), url(../fonts/Montserrat-Bold.woff2) format("woff2")
 }
 
 @font-face {
@@ -116,7 +116,7 @@ picture {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Montserrat-Regular"), url(../fonts/Montserrat-Regular.woff2) format("woff2"), url(../fonts/Montserrat-Regular.woff) format("woff")
+  src: local("Montserrat-Regular"), url(../fonts/Montserrat-Regular.woff2) format("woff2")
 }
 
 @font-face {
@@ -124,7 +124,7 @@ picture {
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: local("Montserrat-Light"), url(../fonts/Montserrat-Light.woff2) format("woff2"), url(../fonts/Montserrat-Light.woff) format("woff")
+  src: local("Montserrat-Light"), url(../fonts/Montserrat-Light.woff2) format("woff2")
 }
 
 :root {
@@ -171,7 +171,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  font-family: Montserrat;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
   min-height: 100%;
   overflow: hidden;
   max-width: 1920px;
@@ -405,7 +405,7 @@ main:not(:last-child) {
 .hello__body {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 600px;
-  flex: 0 1 600px
+  flex: 0 1 600px;
 }
 
 @media (max-width:850px) {
@@ -415,6 +415,10 @@ main:not(:last-child) {
     flex: none;
     width: 100%
   }
+}
+
+.hello__title {
+  opacity: 0;
 }
 
 .hello__title span {
@@ -435,6 +439,10 @@ main:not(:last-child) {
   .hello__title:not(:last-child) {
     margin-bottom: 20px
   }
+}
+
+.hello__text {
+  opacity: 0;
 }
 
 .hello__text:not(:last-child) {
@@ -458,7 +466,8 @@ main:not(:last-child) {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 542px;
   flex: 0 1 542px;
-  padding-bottom: 44%
+  padding-bottom: 44%;
+  opacity: 0;
 }
 
 @media (max-width:850px) {
@@ -509,7 +518,8 @@ main:not(:last-child) {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 30px;
   flex: 0 0 30px;
-  height: 30px
+  height: 30px;
+  opacity: 0;
 }
 
 .hello__link {
