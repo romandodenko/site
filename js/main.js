@@ -114,7 +114,7 @@ window.onload = function () {
 
       document.body.style.overflow = '';
     }
-    
+
   })
 
   let anim = gsap.timeline({})
@@ -344,56 +344,55 @@ window.onload = function () {
 
   const portfolioSwiperInitTwo = document.querySelector(".portfolio-swiper-2");
 
-  window.addEventListener("resize", function () {
-    if (portfolioSwiperInitOne) {
-      if (document.body.offsetWidth < 992) {
-        const portfolioSwiperOne = new Swiper('.portfolio-swiper-1', {
-          observer: true,
-          observeParents: true,
-          watchOverflow: true,
-          direction: 'horizontal',
-          pagination: {
-            el: '.portfolio-swiper-pagination-1',
-            clickable: true,
+  if (portfolioSwiperInitOne) {
+    if (document.body.offsetWidth < 992) {
+      const portfolioSwiperOne = new Swiper('.portfolio-swiper-1', {
+        observer: true,
+        observeParents: true,
+        watchOverflow: true,
+        direction: 'horizontal',
+        pagination: {
+          el: '.portfolio-swiper-pagination-1',
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10
           },
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 10
-            },
-            701: {
-              slidesPerView: 2,
-              spaceBetween: 10
-            }
-          },
-        });
-      }
+          701: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          }
+        },
+      });
     }
+  }
 
-    if (portfolioSwiperInitTwo) {
-      if (document.body.offsetWidth < 992) {
-        const portfolioSwiperTwo = new Swiper('.portfolio-swiper-2', {
-          observer: true,
-          observeParents: true,
-          watchOverflow: true,
-          direction: 'horizontal',
-          pagination: {
-            el: '.portfolio-swiper-pagination-2',
-            clickable: true,
+  if (portfolioSwiperInitTwo) {
+    if (document.body.offsetWidth < 992) {
+      const portfolioSwiperTwo = new Swiper('.portfolio-swiper-2', {
+        observer: true,
+        observeParents: true,
+        watchOverflow: true,
+        direction: 'horizontal',
+        pagination: {
+          el: '.portfolio-swiper-pagination-2',
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10
           },
-          breakpoints: {
-            320: {
-              slidesPerView: 1,
-              spaceBetween: 10
-            },
-            701: {
-              slidesPerView: 2,
-              spaceBetween: 10
-            }
-          },
-        });
-      }
+          701: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          }
+        },
+      });
     }
-  })
+  }
+
 
 }
