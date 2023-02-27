@@ -322,6 +322,33 @@ window.onload = function () {
 
   }
 
+  document.addEventListener("mouseover", function (e) {
+    const elementInteractive = e.target;
+
+    if (elementInteractive.closest(".zerg-item")) {
+
+      elementInteractive.closest(".zerg-item").classList.add("zerg-interactive-v");
+
+      document.querySelectorAll(".zerg-item").forEach(function (e) {
+
+        e.classList.add("zerg-interactive-o")
+
+      })
+    }
+
+    if (!elementInteractive.closest(".zerg-item")) {
+
+      document.querySelectorAll(".zerg-item").forEach(function (e) {
+
+        e.classList.remove("zerg-interactive-o")
+
+        e.classList.remove("zerg-interactive-v")
+
+      })
+    }
+
+  })
+
   function testWebP(callback) {
     var webP = new Image();
 
@@ -393,6 +420,5 @@ window.onload = function () {
       });
     }
   }
-
 
 }
